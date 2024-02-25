@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primaryColor">#10192d</color>
+    <color name="primaryLight">#f0eef8</color>
+
+    <color name="statusBarColor">#10192d</color>
+    <color name="windowBackgroundColor">#f0eef8</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+
+</resources>

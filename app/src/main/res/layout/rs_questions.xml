@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:strokeColor="@color/black"
+    android:layout_margin="@dimen/_5sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_20sdp">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="@string/enter_question"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etOptionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Option A"
+            app:layout_constraintTop_toBottomOf="@id/etQuestion" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etOptionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Option B"
+            app:layout_constraintTop_toBottomOf="@id/etOptionA" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etOptionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Option C"
+            app:layout_constraintTop_toBottomOf="@id/etOptionB" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etOptionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Option D"
+            app:layout_constraintTop_toBottomOf="@id/etOptionC" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

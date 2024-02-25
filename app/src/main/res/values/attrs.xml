@@ -1,0 +1,36 @@
+<resources>
+
+    <declare-styleable name="ShadowButton">
+        <attr name="imgEnd" format="reference"/>
+        <attr name="imgStart" format="reference"/>
+        <attr name="imgTop" format="reference"/>
+        <attr name="imgBottom" format="reference"/>
+        <attr name="buttonText" format="string"/>
+        <attr name="buttonTextAllCaps" format="boolean"/>
+        <attr name="buttonTextColor" format="color"/>
+        <attr name="buttonImgTint" format="color"/>
+        <attr name="buttonFontFamily" format="string"/>
+        <attr name="buttonBackgroundColor" format="color"/>
+        <attr name="buttonShadow" format="dimension"/>
+        <attr name="imgPadding" format="dimension"/>
+        <attr name="buttonPadding" format="dimension"/>
+        <attr name="buttonPaddingHorizontal" format="dimension"/>
+        <attr name="buttonPaddingVertical" format="dimension"/>
+        <attr name="borderColor" format="color"/>
+        <attr name="boxRadius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShineButton">
+        <attr name="text" format="string"/>
+        <attr name="textAllCaps" format="boolean"/>
+        <attr name="animateShine" format="boolean"/>
+        <attr name="animationDuration" format="integer"/>
+        <attr name="textColor" format="color"/>
+        <attr name="fontFamily" format="string"/>
+        <attr name="shineImage" format="reference"/>
+        <attr name="buttonMarginTop" format="dimension" />
+        <attr name="buttonMarginBottom" format="dimension" />
+        <attr name="buttonMarginStart" format="dimension" />
+        <attr name="buttonMarginEnd" format="dimension" />
+    </declare-styleable>
+</resources>

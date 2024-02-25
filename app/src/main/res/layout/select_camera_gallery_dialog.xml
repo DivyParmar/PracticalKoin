@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@android:color/transparent"
+    android:baselineAligned="false"
+    app:strokeWidth="0dp"
+    app:cardCornerRadius="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_sheet_white"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+
+        <View
+            android:id="@+id/hrLine"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/_5sdp"
+            android:background="@drawable/rounded_corners"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"
+            android:tint="#000000"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/txt_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txt_title"
+            app:layout_constraintTop_toTopOf="@id/txt_title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="start"
+            android:text=""
+            android:textColor="#363636"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toStartOf="@id/back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hrLine" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardCamera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:background="@color/white"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/cardGallery"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_title"
+            app:strokeColor="#000000"
+            app:strokeWidth="@dimen/_1sdp">
+
+            <LinearLayout
+                android:id="@+id/lytCameraPick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    app:srcCompat="@drawable/ic_camera"
+                    app:tint="#000000" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/camLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Camera"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardGallery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:background="@color/white"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardCamera"
+            app:layout_constraintTop_toTopOf="@id/cardCamera"
+            app:strokeColor="#000000"
+            app:strokeWidth="@dimen/_1sdp">
+
+            <LinearLayout
+                android:id="@+id/lytGalleryPick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    app:srcCompat="@drawable/ic_gallery"
+                    app:tint="#000000" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/galleryLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Gallery"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
